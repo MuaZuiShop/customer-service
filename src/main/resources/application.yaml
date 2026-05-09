@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: customer-service
+  config:
+    import:
+      - optional:file:.env[.properties]
+      - 'classpath:web.yml'
+      - 'classpath:eureka.yml'
+      - 'classpath:database.yml'
